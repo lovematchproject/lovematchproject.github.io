@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Open+Sans:ital,wght@0,700;1,300&family=VT323&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #FAFAFA;
+  color: #FFF;
+  font-family: 'Raleway', sans-serif;
+}
+
+h2.title {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+li {
+  display: inline-block;
+  font-size: .5rem;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+li span {
+  font-family: 'VT323', cursive;
+  display: block;
+  font-size: 1.5rem;
+}
+
+.btn-primary,
+.btn-primary:not(:disabled):not(.disabled).active, 
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+  background-color: #FAFAFA;
+  color: #AD1457;
+  outline: none;
+  border: none;
+}
+
+.info {
+  color: #880E4F;
+  padding-top: 3rem;
+}
+
+.info h2 {
+  padding-top: .8rem;
+  font-size: 1.8rem;
+}
+
+.info p {
+  font-size: 1rem;
+  padding-left: .2rem;
+  padding-right: .2rem;
+}
+
+.info img {
+  height: 10rem;
+  margin-top: 2rem;
+}
+
+.btn-primary:hover {
+  background-color: #AD1457;
+  color: #FAFAFA;
+}
+
+.footer {
+  background-color: #D81B60;
+  height: 80px;
+}
+
+.footer p {
+  font-size: 1.3rem;
+  line-height: 80px;
+  margin: 0 1rem;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #F48FB1;
+}
+
+.footer a:hover {
+  color: #FFF;
+}
+
+.splash {
+  background-color: #D81B60;
+  padding-top: 3rem;
+  height: 600px;
+}
+
+.g_form {
+  width: 350px;
+  height: 520px;
+}
+
+h1, h2.countdown-title {
+  padding-top: .5rem;
+  font-size: 2.5rem;
+  font-family: 'Bad Script', cursive;
+}
+
+h2.countdown-title {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+img.logo {
+  height: 6rem;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  img.logo {
+    height: 7rem;
+  }
+
+  .splash {
+    padding-top: 7.5rem;
+  }
+
+  .g_form {
+    width: 500px;
+    height: 520px;
+  }
+
+  .modal-dialog {
+    max-width: 550px;
+  }
+
+  h1 {
+    padding-top: .5rem;
+    font-size: 3rem;
+  }
+  
+  p {
+    font-size: 1.2rem;
+  }
+
+  .btn-primary {
+    margin: 1rem;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  img.logo {
+    height: 8rem;
+  }
+
+  .splash {
+    padding-top: 2rem;
+  }
+
+  .g_form {
+    width: 700px;
+    height: 520px;
+  }
+
+  .modal-dialog {
+    max-width: 750px;
+  }
+
+  h1 {
+    padding-top: .5rem;
+    font-size: 3.5rem;
+  }
+  
+  p {
+    font-size: 1.2rem;
+  }
+
+  .btn-primary {
+    margin: 1rem;
+  }
+  
+  .info h2 {
+    padding-top: .8rem;
+  }
+  
+  .info p {
+    font-size: 1.2rem;
+  }
+  
+  .info img {
+    height: 12rem;
+  }
+
+  li {
+    font-size: 1rem;
+  }
+  
+  li span {
+    font-size: 1.8rem;
+  }
+
+  h2.title {
+    font-size: 2.5rem;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .g_form {
+    width: 900px;
+    height: 520px;
+  }
+
+  .modal-dialog {
+    max-width: 950px;
+  }
+
+  .splash {
+    height: 650px;
+    padding-top: 3rem;
+    padding-right: 15rem;
+    padding-left: 15rem;
+  }
+
+  .btn {
+    font-size: 1.2rem;
+  }
+
+  .info {
+    padding: 3rem 0;
+  }
+
+  .info img {
+    height: 13rem;
+  }
+
+  li {
+    font-size: 1rem;
+  }
+  
+  li span {
+    font-size: 2.3rem;
+  }
+
+  h2.countdown-title {
+    font-size: 1.8rem;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  
+}
