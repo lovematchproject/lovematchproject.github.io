@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=VT323&display=swap');
 @import url('./fonts/YoungSerif/stylesheet.css');
 
 * {
@@ -10,11 +10,6 @@ body {
   background-color: #FAFAFA;
   color: #FFF;
   font-family: "DM Sans", sans-serif;
-}
-
-h2.title {
-  font-size: 1rem;
-  font-weight: 700;
 }
 
 li {
@@ -48,7 +43,7 @@ li span {
   padding-top: 3rem;
 }
 
-.info h2 {
+.info h3 {
   padding-top: .8rem;
   font-size: 1.8rem;
 }
@@ -107,12 +102,32 @@ h1, h2.countdown-title {
   text-transform: lowercase;
 }
 
+/* framework for logo + text side-by-side */
+/* .logo-container {
+  display: inline-flex;
+}
+
+.logo-container h1 {
+  display: inline;
+} */
+
+
+h2 {
+  font-family: "YoungSerif", serif;
+  text-transform: lowercase;
+}
+
+h2.title {
+  font-size: 1rem;
+}
+
 h2.countdown-title {
   font-size: 1rem;
 }
 
 h3 {
-  font-family: "YoungSerif", serif;
+  font-family: "DM Sans", serif;
+  font-weight: 700;
   text-transform: lowercase;
 }
 
