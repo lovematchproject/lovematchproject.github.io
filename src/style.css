@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Open+Sans:ital,wght@0,700;1,300&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=VT323&display=swap');
+@import url('./fonts/YoungSerif/stylesheet.css');
 
 * {
   margin: 0;
@@ -8,7 +9,7 @@
 body {
   background-color: #FAFAFA;
   color: #FFF;
-  font-family: 'Raleway', sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 h2.title {
@@ -102,11 +103,17 @@ li span {
 h1, h2.countdown-title {
   padding-top: .5rem;
   font-size: 2.5rem;
-  font-family: 'Bad Script', cursive;
+  font-family: "YoungSerif", serif;
+  text-transform: lowercase;
 }
 
 h2.countdown-title {
   font-size: 1rem;
+}
+
+h3 {
+  font-family: "YoungSerif", serif;
+  text-transform: lowercase;
 }
 
 p {
