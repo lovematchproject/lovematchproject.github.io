@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=VT323&display=swap');
-@import url('./fonts/YoungSerif/stylesheet.css');
+@import url('../fonts/YoungSerif/stylesheet.css');
+@import url('../fonts/Value/stylesheet.css');
 
 * {
   margin: 0;
@@ -7,9 +8,18 @@
 }
 
 body {
-  background-color: #FAFAFA;
-  color: #FFF;
-  font-family: "DM Sans", sans-serif;
+  background-color: #FFF2D8;
+  color: #000;
+  font-family: "Value", "DM Sans", sans-serif;
+}
+
+.time-block {
+  display: none;
+  background: #FF2D80;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  /* transform: rotate(45deg); */
 }
 
 li {
@@ -32,10 +42,12 @@ li span {
 .btn-primary:active,
 .btn-primary:visited,
 .btn-primary:focus {
-  background-color: #FAFAFA;
-  color: #AD1457;
+  font-weight: bold;
+  background-color: #FF2D80;
+  color: #FFF2D8;
   outline: none;
   border: none;
+  border-radius: 0;
 }
 
 .info {
@@ -64,28 +76,28 @@ li span {
   color: #FAFAFA;
 }
 
-.footer {
-  background-color: #D81B60;
+.header {
+  background-color: #FFF2D8;
   height: 80px;
 }
 
-.footer p {
+.header p {
   font-size: 1rem;
   line-height: 80px;
   margin: 0 1rem;
 }
 
-.footer a {
+.header a {
   text-decoration: none;
   color: #F48FB1;
 }
 
-.footer a:hover {
+.header a:hover {
   color: #FFF;
 }
 
 .splash {
-  background-color: #D81B60;
+  background-color: #FFF2D8;
   padding-top: 3rem;
   height: 600px;
 }
@@ -126,7 +138,7 @@ h2.countdown-title {
 }
 
 h3 {
-  font-family: "DM Sans", serif;
+  font-family: "Value", "DM Sans", serif;
   font-weight: 700;
   text-transform: lowercase;
 }
@@ -171,7 +183,7 @@ img.logo {
     margin: 1rem;
   }
 
-  .footer p {
+  .header p {
     font-size: 1.2rem;
   }
 }
@@ -235,6 +247,14 @@ img.logo {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .time-block {
+    display: block;
+  }
+
+  .time-info {
+    display: none;
+  }
+
   .g_form {
     width: 900px;
     height: 520px;

@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Value';
+    src: url('value-regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Value';
+    src: url('value-bold.ttf');
+    font-weight: bold;
+    font-style: bold;
+}
