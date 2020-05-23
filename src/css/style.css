@@ -17,6 +17,7 @@ body {
   display: none;
   background: #FF2D80;
   position: fixed;
+  z-index: 1;
   bottom: 0;
   right: 0;
   /* transform: rotate(45deg); */
@@ -51,7 +52,7 @@ li span {
 }
 
 .info {
-  color: #880E4F;
+  color: #000;
   padding-top: 3rem;
 }
 
@@ -99,7 +100,7 @@ li span {
 .splash {
   background-color: #FFF2D8;
   padding-top: 3rem;
-  height: 600px;
+  height: 100vh;
 }
 
 .g_form {
@@ -125,7 +126,8 @@ h1, h2.countdown-title {
 
 
 h2 {
-  font-family: "YoungSerif", serif;
+  font-family: "Value", "DM Sans" serif;
+  font-weight: bold;
   text-transform: lowercase;
 }
 
@@ -265,7 +267,7 @@ img.logo {
   }
 
   .splash {
-    height: 650px;
+    height: 500px;
     padding-top: 3rem;
     padding-right: 15rem;
     padding-left: 15rem;
