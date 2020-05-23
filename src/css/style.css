@@ -266,19 +266,18 @@ img.logo {
     max-width: 950px;
   }
 
+  .container-fluid {
+    padding: 0 8rem 0 8rem;
+    margin: 0;
+  }
+
   .splash {
     height: 500px;
     padding-top: 3rem;
-    padding-right: 15rem;
-    padding-left: 15rem;
   }
 
   .btn {
     font-size: 1.2rem;
-  }
-
-  .info {
-    padding: 3rem 0;
   }
 
   .info img {
