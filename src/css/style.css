@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Open+Sans:ital,wght@0,700;1,300&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=VT323&display=swap');
+@import url('../fonts/YoungSerif/stylesheet.css');
+@import url('../fonts/Value/stylesheet.css');
 
 * {
   margin: 0;
@@ -6,14 +8,19 @@
 }
 
 body {
-  background-color: #FAFAFA;
-  color: #FFF;
-  font-family: 'Raleway', sans-serif;
+  background-color: #FFF2D8;
+  color: #000;
+  font-family: "Value", "DM Sans", sans-serif;
 }
 
-h2.title {
-  font-size: 1rem;
-  font-weight: 700;
+.time-block {
+  display: none;
+  background: #FF2D80;
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+  /* transform: rotate(45deg); */
 }
 
 li {
@@ -36,18 +43,20 @@ li span {
 .btn-primary:active,
 .btn-primary:visited,
 .btn-primary:focus {
-  background-color: #FAFAFA;
-  color: #AD1457;
+  font-weight: bold;
+  background-color: #FF2D80;
+  color: #FFF2D8;
   outline: none;
   border: none;
+  border-radius: 0;
 }
 
 .info {
-  color: #880E4F;
+  color: #000;
   padding-top: 3rem;
 }
 
-.info h2 {
+.info h3 {
   padding-top: .8rem;
   font-size: 1.8rem;
 }
@@ -68,30 +77,31 @@ li span {
   color: #FAFAFA;
 }
 
-.footer {
-  background-color: #D81B60;
+.header {
+  background-color: #FFF2D8;
   height: 80px;
 }
 
-.footer p {
+.header p {
   font-size: 1rem;
   line-height: 80px;
   margin: 0 1rem;
 }
 
-.footer a {
+.header a {
+  font-weight: bold;
   text-decoration: none;
-  color: #F48FB1;
+  color: #000;
 }
 
-.footer a:hover {
+.header a:hover {
   color: #FFF;
 }
 
 .splash {
-  background-color: #D81B60;
+  background-color: #FFF2D8;
   padding-top: 3rem;
-  height: 600px;
+  height: 100vh;
 }
 
 .g_form {
@@ -99,14 +109,41 @@ li span {
   height: 520px;
 }
 
-h1, h2.countdown-title {
+h1 {
   padding-top: .5rem;
   font-size: 2.5rem;
-  font-family: 'Bad Script', cursive;
+  font-family: "YoungSerif", serif;
+  text-transform: lowercase;
+}
+
+/* framework for logo + text side-by-side */
+/* .logo-container {
+  display: inline-flex;
+}
+
+.logo-container h1 {
+  display: inline;
+} */
+
+
+h2 {
+  font-family: "Value", "DM Sans" serif;
+  font-weight: bold;
+  text-transform: lowercase;
+}
+
+h2.title {
+  font-size: 1rem;
 }
 
 h2.countdown-title {
   font-size: 1rem;
+}
+
+h3 {
+  font-family: "Value", "DM Sans", serif;
+  font-weight: 700;
+  text-transform: lowercase;
 }
 
 p {
@@ -149,7 +186,7 @@ img.logo {
     margin: 1rem;
   }
 
-  .footer p {
+  .header p {
     font-size: 1.2rem;
   }
 }
@@ -213,6 +250,14 @@ img.logo {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .time-block {
+    display: block;
+  }
+
+  .time-info {
+    display: none;
+  }
+
   .g_form {
     width: 900px;
     height: 520px;
@@ -222,19 +267,18 @@ img.logo {
     max-width: 950px;
   }
 
+  .container-fluid {
+    padding: 0 8rem 0 8rem;
+    margin: 0;
+  }
+
   .splash {
-    height: 650px;
+    height: 500px;
     padding-top: 3rem;
-    padding-right: 15rem;
-    padding-left: 15rem;
   }
 
   .btn {
     font-size: 1.2rem;
-  }
-
-  .info {
-    padding: 3rem 0;
   }
 
   .info img {

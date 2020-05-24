@@ -6,33 +6,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="./src/style.css">
+  <link rel="stylesheet" href="./src/css/style.css">
   <title>Love Match | Find your match!</title>
 </head>
 
 <body>
-  <div class="container-fluid splash">
+  <div class="header">
     <div class="row">
-      <div class="col-12 text-center">
-        <img src="./src/logo.png" alt="" class="logo">
-        <h1 class="pt-3">Love Match</h1>
-        <p>A love algorithm that gives you a match based on personal preferences, love language, and relationship preferences.</p>
+      <div class="col-md-6"></div>
+      <div class="col-12 text-center col-md-6 text-md-right">
+        <p><a href="https://github.com/lovematchproject/love-match">view source on github</a></p>
       </div>
     </div>
-    <div class="row text-center">
+  </div>
+  <div class="time-block text-center">
+    <div class="col-12">
+      <h2 class="countdown-title">new results in</h2>
+      <ul>
+        <li><span class="days">0</span>days</li>
+        <li><span class="hours">0</span>Hours</li>
+        <li><span class="minutes">0</span>Minutes</li>
+        <li><span class="seconds">0</span>Seconds</li>
+      </ul>
+    </div>
+  </div>
+  <div class="container-fluid splash">
+    <div class="row">
       <div class="col-12">
-        <h2 class="countdown-title">Next batch of matches released in:</h2>
+        <div class="logo-container">
+          <img src="./src/imgs/logo.svg" alt="love match logo" class="logo">
+          <h1 class="pt-3">Love Match Project</h1>
+        </div>
+        <p>algorithmic matching based on personality, love language, and relationship preferences</p>
+      </div>
+    </div>
+    <div class="row text-center text-md-left">
+      <div class="col-12 time-info">
+        <h2 class="countdown-title">new results in</h2>
         <ul>
-          <li><span id="days">0</span>days</li>
-          <li><span id="hours">0</span>Hours</li>
-          <li><span id="minutes">0</span>Minutes</li>
-          <li><span id="seconds">0</span>Seconds</li>
+          <li><span class="days">0</span>days</li>
+          <li><span class="hours">0</span>Hours</li>
+          <li><span class="minutes">0</span>Minutes</li>
+          <li><span class="seconds">0</span>Seconds</li>
         </ul>
       </div>
       <div class="col-12">
         <!-- Button trigger modal -->
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-          Match Questionnaire
+          get matched
         </button>
       </div>
 
@@ -57,34 +78,34 @@
       </div>
     </div>
   </div>
-  <div class="container info">
-    <div class="row text-center">
+  <div class="container-fluid info">
+    <div class="row text-center text-md-left">
       <div class="col-12">
         <h2 class="title">About Love Match</h2>
       </div>
       <div class="col-12 col-lg-4">
-        <img src="./src/data.png" alt="">
-        <h2>Answer Questions</h2>
-        <p>
-          Your answers are only seen by the algorithm and only minimal information
-          is sent to your match about you.
-        </p>
+        <img src="./src/imgs/data.png" alt="">
+        <h3>Answer Questions</h2>
+          <p>
+            Your answers are only seen by the algorithm and only minimal information
+            is sent to your match about you.
+          </p>
       </div>
       <div class="col-12 col-lg-4">
-        <img src="./src/magic_algorithm.png" alt="">
-        <h2>Love Algorithm</h2>
-        <p>
-          The love algorithm uses the pool of results
-          and your personal preferences to create one-to-one matches.
-        </p>
+        <img src="./src/imgs/magic_algorithm.png" alt="">
+        <h3>Love Algorithm</h2>
+          <p>
+            The love algorithm uses the pool of results
+            and your personal preferences to create one-to-one matches.
+          </p>
       </div>
       <div class="col-12 col-lg-4">
-        <img src="./src/results.png" alt="">
-        <h2>Get Results</h2>
-        <p>
-          You and your match will recieved an email
-          with your match type, each other's email, age, and social media.
-        </p>
+        <img src="./src/imgs/results.png" alt="">
+        <h3>Get Results</h2>
+          <p>
+            You and your match will recieved an email
+            with your match type, each other's email, age, and social media.
+          </p>
       </div>
     </div>
     <div class="row py-5 text-center text-md-left">
@@ -97,79 +118,79 @@
       <div class="col-12">
         <div class="d-flex flex-column flex-md-row justify-content-center">
           <div class="p-2">
-            <img src="./src/love_match.png" alt="">
+            <img src="./src/imgs/love_match.png" alt="">
           </div>
           <div class="p-2 align-self-center">
             <h3>Love Match</h3>
-            <p>A love match means that you and your match are a perfect match. The main goal of the algorithm is to find everyone a one-to-one love match. Although it prioritizes that, this may not be the case for every single match that it creates. In that case, it pairs the remaining pool with either a compatible match or a friend match.</p>
+            <p>A love match means that you and your match are a perfect match. The main goal of the algorithm is to find
+              everyone a one-to-one love match. Although it prioritizes that, this may not be the case for every single
+              match that it creates. In that case, it pairs the remaining pool with either a compatible match or a
+              friend match.</p>
           </div>
         </div>
       </div>
       <div class="col-12">
         <div class="d-flex flex-column flex-md-row">
           <div class="p-2">
-            <img src="./src/compatible_match.png" alt="">
+            <img src="./src/imgs/compatible_match.png" alt="">
           </div>
           <div class="p-2 align-self-center">
             <h3>Compatible Match</h3>
-            <p>A compatible match means that you and your match have minor differences but they small enough for there to be compatibility. It may not be a love match but that doesn't mean there isn't anything there to explore!</p>
+            <p>A compatible match means that you and your match have minor differences but they small enough for there
+              to be compatibility. It may not be a love match but that doesn't mean there isn't anything there to
+              explore!</p>
           </div>
         </div>
       </div>
       <div class="col-12">
         <div class="d-flex flex-column flex-md-row">
           <div class="p-2">
-            <img src="./src/friend_match.png" alt="">
+            <img src="./src/imgs/friend_match.png" alt="">
           </div>
           <div class="p-2 align-self-center">
             <h3>Friend Match</h3>
-            <p>A friend match means there were major differences between you and your match for there to be romantic compatibility. However, this match could be the start of a beautiful friendship.</p>
+            <p>A friend match means there were major differences between you and your match for there to be romantic
+              compatibility. However, this match could be the start of a beautiful friendship.</p>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-  <div class="container-fluid footer">
-    <div class="row">
-      <div class="col-md-6"></div>
-      <div class="col-12 text-center col-md-6 text-md-right">
-        <p>An open source project on <a href="https://github.com/lovematchproject/love-match">GitHub</a></p>
       </div>
     </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-  </script>
+    </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-  </script>
+    </script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-  </script>
+    </script>
   <script>
     const second = 1000,
       minute = second * 60,
       hour = minute * 60,
       day = hour * 24;
 
-let countDown = new Date('June 1, 2020 00:00:00').getTime(),
-    x = setInterval(function() {    
+    let countDown = new Date('June 1, 2020 00:00:00').getTime(),
+      x = setInterval(function () {
 
-      let now = new Date().getTime(),
+        let now = new Date().getTime(),
           distance = countDown - now;
 
-      document.getElementById('days').innerText = Math.floor(distance / (day)),
-      document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
-      document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
-      document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
+        for (var i = 0; i < 2; i++) {
+          document.getElementsByClassName('days')[i].innerHTML = Math.floor(distance / (day)),
+          document.getElementsByClassName('hours')[i].innerText = Math.floor((distance % (day)) / (hour)),
+          document.getElementsByClassName('minutes')[i].innerText = Math.floor((distance % (hour)) / (minute)),
+          document.getElementsByClassName('seconds')[i].innerText = Math.floor((distance % (minute)) / second);
 
-      // do something later when date is reached
-      // if (distance < 0) {
-      //  clearInterval(x);
-      //  'IT'S MY BIRTHDAY!;
-      // }
+        }
+        // do something later when date is reached
+        // if (distance < 0) {
+        //  clearInterval(x);
+        //  'IT'S MY BIRTHDAY!;
+        // }
 
-    }, second)
+      }, second)
   </script>
 </body>
 
