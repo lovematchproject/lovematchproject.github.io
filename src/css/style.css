@@ -89,8 +89,9 @@ li span {
 }
 
 .header a {
+  font-weight: bold;
   text-decoration: none;
-  color: #F48FB1;
+  color: #000;
 }
 
 .header a:hover {
