@@ -140,7 +140,7 @@ h2 {
 }
 
 h2.title {
-  font-size: 1rem;
+  font-size: 2rem;
 }
 
 h2.countdown-title {
@@ -229,6 +229,10 @@ img.logo {
   .btn-primary {
     margin: 1rem;
   }
+
+  .info.container-fluid {
+    padding-top: 2.5rem;
+  }
   
   .info h2 {
     padding-top: .8rem;
@@ -273,7 +277,7 @@ img.logo {
 
   .splash {
     height: 500px;
-    padding-top: 1rem;
+    padding-top: 5rem;
     margin-bottom: 3rem;
   }
 
