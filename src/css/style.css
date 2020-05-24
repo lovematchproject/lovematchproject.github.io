@@ -14,7 +14,7 @@ body {
 }
 
 .time-block {
-  display: none;
+  display: block;
   background: #FF2D80;
   position: fixed;
   z-index: 1;
@@ -49,6 +49,7 @@ li span {
   outline: none;
   border: none;
   border-radius: 0;
+  margin-left: 0 !important; /* Bad practice but like I had to do this */
 }
 
 .info {
@@ -250,14 +251,6 @@ img.logo {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  .time-block {
-    display: block;
-  }
-
-  .time-info {
-    display: none;
-  }
-
   .g_form {
     width: 900px;
     height: 520px;
@@ -274,7 +267,8 @@ img.logo {
 
   .splash {
     height: 500px;
-    padding-top: 3rem;
+    padding-top: 1rem;
+    margin-bottom: 3rem;
   }
 
   .btn {
@@ -286,15 +280,18 @@ img.logo {
   }
 
   li {
-    font-size: 1rem;
+    font-size: .8rem;
+    margin-left: 0;
+    padding-left: 0;
+    padding-bottom: 0;
   }
   
   li span {
-    font-size: 2.3rem;
+    font-size: 1.8rem;
   }
 
   h2.countdown-title {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 }
 
