@@ -44,7 +44,7 @@
     </div>
     <div class="row text-center text-lg-left">
       <div class="col-12 time-info">
-        <h2 class="countdown-title">new results in</h2>
+        <h2 class="countdown-title">matches sent!</h2>
         <ul>
           <li><span class="days">0</span>days</li>
           <li><span class="hours">0</span>Hours</li>
@@ -176,16 +176,16 @@
     let countDown = new Date('June 1, 2020 00:00:00').getTime(),
       x = setInterval(function () {
 
-        let now = new Date().getTime(),
-          distance = countDown - now;
+        // let now = new Date().getTime(),
+        //   distance = countDown - now;
 
-        for (var i = 0; i < 2; i++) {
-          document.getElementsByClassName('days')[i].innerHTML = Math.floor(distance / (day)),
-          document.getElementsByClassName('hours')[i].innerText = Math.floor((distance % (day)) / (hour)),
-          document.getElementsByClassName('minutes')[i].innerText = Math.floor((distance % (hour)) / (minute)),
-          document.getElementsByClassName('seconds')[i].innerText = Math.floor((distance % (minute)) / second);
+        // for (var i = 0; i < 2; i++) {
+        //   document.getElementsByClassName('days')[i].innerHTML = Math.floor(distance / (day)),
+        //   document.getElementsByClassName('hours')[i].innerText = Math.floor((distance % (day)) / (hour)),
+        //   document.getElementsByClassName('minutes')[i].innerText = Math.floor((distance % (hour)) / (minute)),
+        //   document.getElementsByClassName('seconds')[i].innerText = Math.floor((distance % (minute)) / second);
 
-        }
+        // }
         // do something later when date is reached
         // if (distance < 0) {
         //  clearInterval(x);
